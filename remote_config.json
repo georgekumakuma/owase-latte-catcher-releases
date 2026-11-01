@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "notice": "",
+  "min_app_version": "2.5.0",
+  "config": {
+    "CHAT_URL_TEMPLATE": "https://www.youtube.com/live_chat?v={video_id}&is_popout=1&dark_theme=1",
+    "CHAT_RENDERER_TAG": "yt-live-chat-renderer",
+    "CHAT_ITEM_SELECTORS": [
+      "yt-live-chat-text-message-renderer",
+      "yt-live-chat-paid-message-renderer",
+      "yt-live-chat-paid-sticker-renderer",
+      "yt-live-chat-membership-item-renderer"
+    ],
+    "SPECIAL_ITEM_SELECTORS": [
+      "yt-live-chat-paid-message-renderer",
+      "yt-live-chat-paid-sticker-renderer",
+      "yt-live-chat-membership-item-renderer"
+    ],
+    "CHAT_HASH_SELECTORS": [
+      "yt-live-chat-text-message-renderer",
+      "yt-live-chat-paid-message-renderer"
+    ],
+    "ERROR_SELECTORS": [
+      "yt-live-chat-message-renderer[is-error]",
+      ".error-message",
+      "#error-screen"
+    ]
+  },
+  "settings_migrations": []
+}
